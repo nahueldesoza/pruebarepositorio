@@ -1,14 +1,19 @@
-let number = 4;
-const a = prompt ("Ingrese su nombre");
-let boolean = false;
-console.log(number,a,boolean);
-const edad = prompt ("Cuantos años tenés?")
-function mostrar (a,edad){
-    if (edad>=18){
-        console.log("Hola "+a+", tenés "+edad+" años. Sos mayor.");
-    } else {
-        console.log("Hola "+a+", tenés "+edad+" años. Sos menor.");
-    }
-    
+
+function ingreseNombre (){
+    let nombre = prompt ("Ingrese su nombre");
+    return (nombre);
 }
-mostrar (a,edad)
+function ingreseEdad (){
+    let edad = prompt ("Ingrese su nombre");
+    return (edad);
+}
+function mostrar (nombre,edad){
+    if (edad>=18){
+        console.log("Hola "+nombre+", tenés "+edad+" años. Sos mayor.");
+    } else {
+        console.log("Hola "+nombre+", tenés "+edad+" años. Sos menor.");
+    }
+}
+let nombre = ingreseNombre ();
+let edad = ingreseEdad ();
+mostrar (nombre,edad);
