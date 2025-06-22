@@ -4,7 +4,7 @@ function ingreseNombre (){
     return (nombre);
 }
 function ingreseEdad (){
-    let edad = prompt ("Ingrese su nombre");
+    let edad = prompt ("Ingrese su edad");
     return (edad);
 }
 function mostrar (nombre,edad){
@@ -17,10 +17,13 @@ function mostrar (nombre,edad){
 let nombre = ingreseNombre ();
 let edad = ingreseEdad ();
 mostrar (nombre,edad);
-const arrarVacio=[]
-let a1 = prompt("Ingrese los nombres para el array:")
+const arrayVacio=[]
+let a1 = prompt("Ingrese los nombres para el array (valor cero para salir):")
 while (a1 != 0){
-    arrarVacio.push(a1)
-    a1 = prompt("Ingrese los nombres para el array:")
+    arrayVacio.push(a1)
+    a1 = prompt("Ingrese los nombres para el array (valor cero para salir):")
 }
-alert (arrarVacio)
+for (i=0;i<arrayVacio.length;i++){
+    alert ("El nombre es: "+arrayVacio[i])
+}
+alert ("Ingresando datos para entradas")
