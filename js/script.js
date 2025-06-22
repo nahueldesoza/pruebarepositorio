@@ -9,7 +9,7 @@ function ingreseEdad (){
 }
 function mostrar (nombre,edad){
     if (edad>=18){
-        console.log("Hola "+nombre+", tenés "+edad+" años. Sos mayor.");
+        alert("Hola "+nombre+", tenés "+edad+" años. Sos mayor.");
     } else {
         console.log("Hola "+nombre+", tenés "+edad+" años. Sos menor.");
     }
@@ -17,3 +17,10 @@ function mostrar (nombre,edad){
 let nombre = ingreseNombre ();
 let edad = ingreseEdad ();
 mostrar (nombre,edad);
+const arrarVacio=[]
+let a1 = prompt("Ingrese los nombres para el array:")
+while (a1 != 0){
+    arrarVacio.push(a1)
+    a1 = prompt("Ingrese los nombres para el array:")
+}
+alert (arrarVacio)
